@@ -68,9 +68,58 @@ body {
 
 
 /*  Navbar */
+Nav, .nav-item, Nav .navbar {
+  display: flex;
+  align-items: center;
+}
+
+
+Nav {
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100px; 
+  background: transparent;
+  position: absolute;
+}
+
+Nav .navbar {
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
 
 
 
+Nav .navbar .brand {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 700;
+}
+
+Nav ul {
+  margin-right: 20px;
+}
+
+Nav .nav-list a{
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin-right: 20px;
+  font-weight: 700;
+  color: #eee;
+}
+
+
+Nav button {
+  border: none;
+  background: rgb(13, 13, 126);
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
 
 
 
