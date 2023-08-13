@@ -126,7 +126,7 @@ Nav button {
 /* Heropage */
 .home {
   background-color: rosybrown;
-  background: linear-gradient(rgba(29, 9, 9, 0.898), rgba(29, 9, 9, 0.748), rgba(17, 17, 17, 0.522)), url('../../img/hero.jpg') center center/cover no-repeat;
+  background: linear-gradient(rgba(29, 9, 9, 0.898), rgba(29, 9, 9, 0.748), rgba(17, 17, 17, 0.522)), url('img/pexels-james-wheeler-1519088.jpg') center center/cover no-repeat;
 }
 
 .home h1 {
@@ -348,7 +348,7 @@ Nav button {
 
 .purpose {
   padding: 250px 0;
-  background: linear-gradient(60deg, rgba(55, 57, 197, 0.707), rgba(0, 0, 0, 0.809)), url('../../img/pexels-canva-studio-3194519\(1\).jpg') center center/cover no-repeat;
+  background: linear-gradient(60deg, rgba(55, 57, 197, 0.707), rgba(0, 0, 0, 0.809)), url('./img/pexels-canva-studio-3194519\(1\).jpg') center center/cover no-repeat;
   line-height: 1.5;
 }
 
