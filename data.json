@@ -1,0 +1,77 @@
+{
+    "person": [
+        {
+            "fullName": "John Paulsen",
+            "age": 22,
+            "img": "./img/Hero page 2.png",
+            "hobbies": ["Football", "Volleyball", "Swimming"],
+            "gender": "M",
+            "status": "single",
+            "profession": "student"
+        },
+        {
+            "fullName": "Lionel Francisca",
+            "age": 27,
+            "img": "./img/pexels-alesia-kozik-6771985.jpg",
+            "hobbies": ["Singing", "Reading", "Cooking"],
+            "gender": "F",
+            "status": "Dating",
+            "profession": "Ux/Ui Designer"
+        },
+        {
+            "fullName": "Mark Olivia",
+            "age": 24,
+            "img": "./img/pexels-anna-nekrashevich-6801869.jpg",
+            "hobbies": ["Reading", "Treveling", "Shopping"],
+            "gender": "F",
+            "status": "single",
+            "profession": "Entrepreneurer"
+        },
+        {
+            "fullName": "Clark Wayne",
+            "age": 33,
+            "img": "./img/pexels-anna-nekrashevich-6802048.jpg",
+            "hobbies": ["Shopping", "Travel", "Skydiving"],
+            "gender": "M",
+            "status": "single",
+            "profession": "JavaScript Developer"
+        },
+        {
+            "fullName": "Bruce Mabel",
+            "age": 38,
+            "img": "./img/Hero page 2.png",
+            "hobbies": ["Yoga", "Dancing", "Reading"],
+            "gender": "F",
+            "status": "single",
+            "profession": "Financial Analyst"
+        }
+    ],
+    
+    "salaries": [
+        {
+            "annual": 10000,
+            "sources": "student loan",
+            "job-title": "student"
+        },
+        {
+            "annual": 76000,
+            "sources": "paycheck",
+            "job-title": "Ux/Ui Designer"
+        },
+        {
+            "annual": 500000,
+            "sources": ["Revenue", "Investment Returns", "Interest"],
+            "job-title": "Entreprenuerer"
+        },
+        {
+            "annual": 150000,
+            "sources":"paycheck",
+            "job-title": "JavaScript Developer"
+        },
+        {
+            "annual": 250000,
+            "sources":"paycheck",
+            "job-title": "Financial Analyst"
+        }
+    ]
+}

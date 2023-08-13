@@ -1,0 +1,150 @@
+@import url(./style.css);
+
+.pricing {
+    width: 100vw;
+    height: 100%;
+    padding: 100px 0;
+    text-transform: capitalize;
+    background: linear-gradient(90deg,rgb(206, 207, 208), rgb(191, 193, 196), rgb(125, 128, 135));
+}
+
+.pricing h2 {
+    font-size: var(--h1);
+    text-align: center;
+    margin-bottom: var(--h1);
+    color:rgb(63, 55, 55);
+    color:rgb(28, 61, 67)
+}
+
+.pricing .content {
+    display: flex;
+}
+
+.pricing .content a {
+    text-decoration: none;
+}
+
+
+.pricing .price {
+    width: 300px;
+    height: 400px;
+    padding: 50px 30px 0px 30px;
+    border-radius: 10px;
+    margin: 30px;
+    overflow: hidden;
+    box-shadow: 5px 10px 15px rgb(16, 15, 15);
+    transition: .5s ease;
+    opacity: .8;
+}
+
+.pricing .price:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+
+.price h3 {
+    font-size: calc(var(--h2));
+    text-align: center;
+    margin: 30px 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+    color:#fff;
+}
+
+
+.price h3::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: rgb(157, 157, 157);
+    position: absolute;
+    bottom: 0;
+}
+
+
+.price .free  {
+    color: rgb(214, 208, 208);
+}
+
+
+
+.price.free-trial {
+    background: linear-gradient(rgba(123, 123, 123, 0.974), rgb(63, 55, 55), rgba(0, 0, 0, 0.94));
+    color: #fff;
+}
+
+.price.silver-plan {
+    background: linear-gradient(rgba(94, 20, 82, 0.678), rgba(73, 12, 43, 0.796), rgb(0, 0, 0));
+    color: #fff;
+    position: relative;
+}
+
+.price.silver-plan::after, 
+.price.gold-plan::after {
+    text-align: center;
+    font-size: var(--h4);
+    width: 50%;
+    height: 35px;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    /* border-radius: 20px 0 0 20px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(25px)  rotate(35deg);
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.price.gold-plan {
+    background: linear-gradient(rgba(0, 0, 0, 0.678), rgb(68, 27, 27), #000);
+    color: #fff;
+    position: relative;
+}
+
+
+
+.price.silver-plan::after {
+    content: "Silver";
+    background-color: rgb(196, 159, 159);
+}
+
+.price.gold-plan::after {
+    content: "Gold";
+    background-color: rgba(25, 199, 184, 0.618);
+}
+
+
+.price h3 span {
+    font-size: var(--h4);
+    position: absolute;
+    bottom: 40px;
+    right: 15px;
+    color:rgb(223, 219, 219);
+}
+
+.price .fa-check {
+    color: rgb(74, 181, 21);
+}
+
+.price .fa-times {
+    color: rgb(202, 25, 25);
+}
+
+.price .list-items {
+    list-style: none;
+    line-height: 2;
+}
+
+.price .list {
+    font-size: var(--h4);
+}
+
+.price .list i {
+    margin-right: 20px;
+}

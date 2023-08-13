@@ -1,0 +1,117 @@
+@import url(./style.css);
+
+
+.login-signup {
+    display: flex;
+
+}
+
+.login {
+    background: linear-gradient( 60deg,rgba(69, 69, 72, 0.563), rgba(3, 3, 4, 0.268), rgba(74, 92, 175, 0.302)), url('../assets/images/baner.jpg') center  center/cover no-repeat;
+    height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+}
+
+
+
+.login .content {
+    background: rgba(0, 0, 0, 0.344);
+    padding: 50px;
+    width: 500px;
+    height:  100%;
+    border-radius: 5px;
+}
+
+.login .content .header {
+    font-size: var(--h1);
+    color: #fff;
+    margin-bottom: 3rem;
+}
+
+.login form label {
+    font-size: 1.2rem;
+    color: #eee;
+    /* letter-spacing: 1px; */
+    margin-bottom: 10px;
+}
+
+.login form input {
+    padding: 10px;
+    border: none;
+    border-radius:  5px;
+    height: 40px;
+    font-size: 1rem;
+    background-color: #ddd;
+}
+
+.login form input:focus {
+    outline: none;  
+    background-color: #eee;
+}
+
+
+.login .sign-in{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.login .sign-in.password {
+    margin-bottom: 2.5rem;
+}
+
+.login .btn {
+    display: inline-block;
+    background: rgb(74, 87, 202);
+    font-size: 1rem;
+    padding: 15px 30px;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: rgb(250, 248, 248);
+    margin-bottom: 2rem;
+    border: none;
+}
+
+.login .btn:hover {
+    background-color: rgb(51, 69, 232);
+}
+
+.login .btn:active {
+    opacity: .8;
+}
+
+.forgot-password {
+    display: block;
+    margin-bottom: 20px;
+    color: #eee;
+    font-size: 1rem;
+}
+
+.log-text {
+    display: flex;
+    color: #eee;
+    justify-content: space-between;
+    font-size: 1rem;
+}
+
+.log-sign-up {
+    color: lightblue;
+}
+
+.login-signup  .sign-up {
+    background: red;
+    background: linear-gradient( 60deg,rgba(12, 12, 12, 0.857), rgba(3, 3, 4, 0.645), rgba(74, 93, 175, 0.597)), url('../assets/img/berkeley-communications-WEDDt-u3q3o-unsplash.jpg') center  center/cover no-repeat;
+    width: 10%;
+    transition:  .5s ease;
+}
+
+.login-signup .sign-up:hover {
+    width: 90%;
+}
+
+
+/* Sign up */
