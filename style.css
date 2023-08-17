@@ -348,7 +348,7 @@ Nav button {
 
 .purpose {
   padding: 250px 0;
-  background: linear-gradient(60deg, rgba(55, 57, 197, 0.707), rgba(0, 0, 0, 0.809)), url('./img/pexels-canva-studio-3194519\(1\).jpg') center center/cover no-repeat;
+  background: linear-gradient(60deg, rgba(55, 57, 197, 0.707), rgba(0, 0, 0, 0.809)), url('img/pexels-canva-studio-3194519\(1\).jpg') center center/cover no-repeat;
   line-height: 1.5;
 }
 
@@ -493,7 +493,7 @@ Nav button {
 /* ------------------ Contact us ---------------- */
 
 .contact-us {
-  background: linear-gradient(160deg, rgba(196, 17, 17, 0.193), rgba(55, 162, 204, 0.337) 50%), url('../../img/rose.jpg') center center/cover no-repeat;
+  background: linear-gradient(160deg, rgba(196, 17, 17, 0.193), rgba(55, 162, 204, 0.337) 50%), url('img/rose.jpg') center center/cover no-repeat;
   padding: 150px 0;
   height: 100%;
 }
