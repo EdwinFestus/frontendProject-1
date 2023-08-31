@@ -43,7 +43,7 @@ body {
 }
 
 .home {
-  height: calc(100vh);
+  height: 100vh;
   width: 100vw;
   display: flex;
   justify-content: center;
@@ -339,7 +339,7 @@ Nav button {
 }
 
 .about-us img {
-  width: 500px;
+  width: 100%;
   box-shadow: 0 3px 15px rgba(0, 0, 0, 0.693);
   
 }
@@ -842,138 +842,136 @@ Nav button {
 
 
 
-@media (max-width: 780px ) {
 
-  .container {
-    padding: 0 50px;
+/* For mobie */
+
+
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .home {
+    font-size: 12px;
   }
 
-  nav .nav-list, nav button{
+}
+
+/* Media query for even smaller screens */
+@media (max-width: 480px) {
+  *.btn {
+    padding: 12px 20px;
+  }
+
+  Nav {
+    display: flex;
+    margin: 0;
     display: none;
   }
 
-
-
-  body {
-    line-height: 1.5;
-  }
-  .home {
-    height: 100vh;
+  Nav .brand {
+    font-style: 1rem;
+    flex-direction: column;
   }
 
-  .home h1 {
-    font-size: 2.5rem; 
-    
+  .home h1, .about-us .text-content .heading{
+    font-size: 2rem;
   }
 
   .home h3 {
-    font-size: 1.5rem;
+    font-size: 14px;
+    margin-bottom: 30px;
+    line-height: 1.5;
   }
 
-  .home .btn {
-    font-size: 1rem;
+  .home .container, .about-us .container {
+    padding: 20px;
   }
 
-
-  .services .sub-title {
-    text-align: center;
-    font-size:  1.1rem;
-    letter-spacing: 0;
-    margin: 0 0 0px 0;
-    width: 100%;
-    color: #3f3f3f;
-    display: inline-block;
-  }
-
-  .services h2, .about-us .text-content .heading {
-    font-size: 3rem;
+  .home .btn, .about-us .btn {
+    font-size: 12px;
+    padding: 12px 20px;
     margin: 0;
-    padding: 10px 0;
   }
 
-
-  .services .sub-heading::before, .services  .sub-heading::after {
+  .home .btn.join {
     display: none;
   }
 
-  .about-us .text-content  .heading {
-    line-height:  1.5;
-    
+
+
+
+  .services {
+    padding: 50px 0;
+  }
+
+  .services  h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    padding: 0; 
+  }
+
+  .services .sub-heading {
+    font-size: 12px;
+    letter-spacing: 0;
+    margin-bottom: 2rem;
+  }
+
+  .services .sub-heading::before  {
+    left: -20px;
+    height: 2px;
+  }
+
+
+  .services  .sub-heading::after {
+    right: -20px;
+    height: 2px;
+  }
+
+
+  .services .card-body {
+    margin-bottom: 1rem;
+  }
+
+  .services .box h3 {
+    font-size: 14px;
+  }
+
+  .services  .box {
+    margin-bottom: 1rem;
+    padding: 12px 10px;
+    height: 200px;
+  }
+
+  .services .box i {
+    font-size: 14px;
+
+  }
+
+
+
+  .about-us {
+    margin: 0;
+    padding: 30px 0;
   }
 
   .about-us .content {
     display: flex;
     flex-direction: column;
-    align-items: center;
+  }
+
+  .about-us img, .about-us .text-content {
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  .about-us .text-content {
     text-align: center;
   }
 
-  .about-us .text-content .sub-heading {
-    font-size:  1.5rem;
-    letter-spacing: 0;
-    margin: 0 0 30px 0;
-    width: 100%;
-    color: #3f3f3f;
+  .about-us p {
+    font-size: 14px;
+    padding: 0;
   }
 
 
- 
 
-  .about-us img {
-    display: none;
-  }
-
-  .about-us .btn {
-    font-size: 1rem;
-  }
-
-}
-
-
-/* For mobie */
-
-@media (min-width: 480px) {
-  Nav .brand{
-    font-size: 1.5rem;;
-  }
-
-
-  .container {
-    padding: 0 15px;
-  }
-
-  .buttons {
-    display: flex;
-  }
-
-  .btn {
-    padding: 5px 20px;
-  }
-
-  .btn.more {
-    display: none;
-  }
-
-
-  .contact-us .heading {
-    font-size: 2rem;
-  }
-
-  .contact-us .content {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .contact-us .left, .contact-us .right{
-    width: 100%;
-  }
-
-  .contact-us .left{
-    margin-bottom: 5rem;
-  }
-  
-  .footer .content, .foooter .left{
-    display: flex;
-    flex-direction: column;
-  }
 }
