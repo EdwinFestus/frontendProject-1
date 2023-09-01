@@ -875,6 +875,10 @@ Nav button {
     flex-direction: column;
   }
 
+  .home {
+    background:linear-gradient(rgba(9, 17, 29, 0.898), rgba(9, 18, 29, 0.748), rgba(17, 17, 17, 0.522)), url(https://images.pexels.com/photos/351264/pexels-photo-351264.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) center/cover no-repeat;
+  }
+
   .home h1, .about-us .text-content .heading{
     font-size: 2rem;
   }
@@ -886,7 +890,9 @@ Nav button {
   }
 
   .home .container, .about-us .container, 
-  .purpose .container, .emailnewsletter .container {
+  .purpose .container, 
+  .emailnewsletter .container, 
+  .contact-us .container, .footer .container {
     padding: 0 20px;
     overflow: hidden;
   }
@@ -910,7 +916,7 @@ Nav button {
 
 
 
-  .services, .purpose {
+  .services, .purpose, .contact-us {
     padding: 50px 0;
   }
 
@@ -1023,12 +1029,12 @@ Nav button {
   }
 
   .emailnewsletter .heading {
-    font-size: 2rem;
+    font-size: 16px;
   }
 
   .emailnewsletter .sub-heading {
     font-size: 14px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
   }
 
   .emailnewsletter .email-right {
@@ -1057,4 +1063,160 @@ Nav button {
     padding: 5px 20px;
   }
 
+
+  .contact-us .right{
+    width: 200px;
+  }
+
+  .contact-us .header{
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+
+  .contact-us .left .heading {
+    font-size: 16px;
+  }
+
+  .contact-us .content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-us .left, .contact-us .right {
+    width: 100%;
+  }
+
+  .contact-us .left {
+    margin-bottom: 50px;
+  }
+
+  .contact-us .content p {
+    font-size: 14px;
+  }
+
+  .contact-us .left .socials .heading {
+    font-size: 16px;
+    letter-spacing: 0;
+  }
+
+  .contact-us .social-cont i{
+    font-size: 1.5rem;
+  }
+
+  .contact-us .right{
+    padding: 30px 20px;
+    width: 350px;
+    margin: 0 auto;
+  }
+
+  .contact-us .right label {
+    font-size: 14px;
+    position: relative;
+    top: 0;
+  }
+
+  .contact-us .right .btn {
+    font-size: 14px;
+    padding: 12px 20px;
+    width: 100%;
+  }
+
+  .contact-us .right input {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  
+  .contact-us .right textarea {
+    margin-top: 0;
+  }
+
+
+  .contact-us .right .fullname,
+  .contact-us .right .email,
+  .contact-us .right .topic,
+  .contact-us .right .message {
+    margin-bottom: 20px;
+  }
+
+
+
+  .footer .content{
+    flex-direction: column;
+    padding: 30px 0;
+    height: auto;
+  }
+
+  .footer .footer-navigation {
+    margin-bottom: 20px;
+    padding-right: 10px;
+    margin-right: 0;
+  }
+
+  .footer .footer-left .footer-navigation h2{
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .footer .footer-left .nav a {
+    font-size: 14px;
+  }
+
+  .footer .footer-left {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .footer-bottom   {
+    padding: 15px 0;
+    height: auto;
+  }
+
+
+  .footer .footer-right h3 {
+    font-size: 16px;
+    padding-bottom: 10px;
+    margin: 0;
+  }
+
+  .footer .footer-right form input{
+    width: 50%;
+    border: 2px solid #949191;
+    font-size: 14px;
+    padding: 10px 5px;
+    letter-spacing: 0;
+  }
+
+  .footer .form {
+    margin: 0;
+  }
+
+  .footer .footer-right .btn {
+    padding: 12px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0;
+  }
+
+  .footer-bottom h2{
+    font-size: 14px;
+    letter-spacing: 0;
+  }
+
+
+  .top {
+    padding: 10px;
+  }
+  
+  .top i {
+    font-size:  14px;
+  }
+
+  .social-icons {
+    display: flex;
+  }
+
+  .footer-right .social-icons i{
+    font-size: 1.5rem;
+    margin-right: 30px;
+  }
 }
