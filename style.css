@@ -68,58 +68,109 @@ body {
 
 
 /*  Navbar */
-Nav, .nav-item, Nav .navbar {
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Basic styles for the navigation menu */
+body {
+  font-family: Arial, sans-serif;
+}
+
+
+.brand {
+  font-size: 1.5rem;
+  font-weight:  bold;
+}
+
+.navbar {
+  background-color: #333;
+  color: #fff;
   display: flex;
-  align-items: center;
-}
-
-
-Nav {
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  height: 100px; 
-  background: transparent;
-  position: absolute;
-}
-
-Nav .navbar {
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  padding: 10px 20px;
 }
 
-
-
-Nav .brand {
-  font-size: 2rem;
-  text-transform: uppercase;
-  color: #fff;
-  font-weight: 700;
+.nav-links {
+  list-style: none;
+  display: flex;
 }
 
-Nav ul {
-  margin-right: 20px;
+.nav-links li {
+  margin-right: 50px; 
+  margin-bottom: 1rem;
+  height: auto;
 }
 
-Nav .nav-list a{
+.nav-links a {
   text-decoration: none;
-  font-size: 1.2rem;
-  margin-right: 20px;
-  font-weight: 700;
-  color: #eee;
-}
-
-
-Nav button {
-  border: none;
-  background: rgb(13, 13, 126);
   color: #fff;
-  padding: 15px 30px;
-  border-radius: 30px;
-  font-size: 1.2rem;
-  font-weight: 700;
+  font-size: 16px;
+  transition: color 0.3s;
 }
+
+.nav-links a:hover {
+  color: #00bcd4;
+}
+
+/* Styles for the mobile navigation menu */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 3px 0;
+  transition: transform 0.3s;
+}
+
+/* Media query for responsive design */
+@media screen and (max-width: 768px) {
+  .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      padding: 2rem;
+      top: 50px;
+      left: 0;
+      width: 60%;
+      height: 100vh;
+      overflow: hidden;
+      background-color: #333;
+      z-index: 1;
+  }
+
+  .nav-links.active {
+      display: flex;
+  }
+
+  .menu-toggle {
+      display: flex;
+  }
+
+  .menu-toggle.active .bar:nth-child(1) {
+      transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .menu-toggle.active .bar:nth-child(2) {
+      opacity: 0;
+  }
+
+  .menu-toggle.active .bar:nth-child(3) {
+      transform: rotate(45deg) translate(-5px, -6px);
+  }
+}
+
+
+
 
 
 
