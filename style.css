@@ -174,6 +174,9 @@ Nav button {
   background: #9b0a16;
 }
 
+.home .btn.mobile {
+  display: none;
+}
 
 
 /* =================== Services =================== */
@@ -882,24 +885,32 @@ Nav button {
     line-height: 1.5;
   }
 
-  .home .container, .about-us .container {
-    padding: 20px;
+  .home .container, .about-us .container, 
+  .purpose .container, .emailnewsletter .container {
+    padding: 0 20px;
+    overflow: hidden;
   }
 
-  .home .btn, .about-us .btn {
+  .home .btn, .about-us .btn,
+  .emailnewsletter .btn  {
     font-size: 12px;
     padding: 12px 20px;
     margin: 0;
   }
 
-  .home .btn.join {
+  .home .btn.desktop {
     display: none;
+  }
+
+  .home .btn.mobile {
+    display: inline-flex;
+    margin-left: 30px;
   }
 
 
 
 
-  .services {
+  .services, .purpose {
     padding: 50px 0;
   }
 
@@ -942,7 +953,7 @@ Nav button {
   }
 
   .services .box i {
-    font-size: 14px;
+    font-size: 1.5rem;
 
   }
 
@@ -963,6 +974,15 @@ Nav button {
     margin-top: 2rem;
   }
 
+  .about-us .text-content  .heading {
+    margin: 10px 0 20px 0;
+  }
+
+  .about-us  .sub-heading {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+
   .about-us .text-content {
     text-align: center;
   }
@@ -973,6 +993,68 @@ Nav button {
     color: #111;
   }
 
+  
 
+  .purpose .mission .heading, .purpose .vision .heading {
+      font-size: 2rem;
+  }
+
+  .purpose .mission p, .purpose .vision p {
+    font-size: 14px;
+  }
+
+  .purpose .mission {
+    margin-bottom: 1.5rem;
+  }
+
+  .purpose .mission .heading::before,  
+  .purpose .vision .heading::before {
+    left: 30px;
+  }
+
+  .purpose .mission .heading::after,  
+  .purpose .vision .heading::after {
+    right:  30px;
+  }
+
+  .emailnewsletter {
+    padding: 50px 0;
+    width: 100vw;
+  }
+
+  .emailnewsletter .heading {
+    font-size: 2rem;
+  }
+
+  .emailnewsletter .sub-heading {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+
+  .emailnewsletter .email-right {
+    display: none;
+  }
+
+  .emailnewsletter .form {
+    width: 100%;
+  }
+
+  .emailnewsletter .form input {
+    width: 80%;
+    height: 30px;
+    padding: 10px;
+    margin: 0;
+    font-size: 14px;
+  }
+
+  .emailnewsletter .btn {
+    display: inline-block;
+    position: relative;
+    margin-top: 10px;
+    height:   auto;
+    width: auto;
+    letter-spacing: 0;
+    padding: 5px 20px;
+  }
 
 }
