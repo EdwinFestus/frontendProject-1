@@ -52,7 +52,7 @@ body {
 
 .about-us,
 .purpose {
-  padding: 150px 0;
+  padding: 100px 0;
   text-align: center;
   display: flex;
   align-items: center;
@@ -205,8 +205,8 @@ body {
   text-decoration: none;
   display: inline-block;
   color: #fff;
-  padding: 18px 35px;
-  font-size: calc(var(--h3) - 15px);
+  padding: 18px 30px;
+  font-size: 1rem;
   margin-right: 50px;
   letter-spacing: 1px;
   font-weight: 700;
@@ -298,10 +298,12 @@ body {
 }
 
 .services .box h3 {
-  font-size: calc(var(--h4) + 10px);
+  font-size: 1.5rem;
   color: rgb(226, 226, 226);
   top: 20px;
   position: relative;
+  text-align: center;
+  margin-top: 30px;
 }
 
 .services .box .card-body {
